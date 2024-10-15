@@ -5,6 +5,7 @@ export default {
 	isProcessing: false,
 
 	isRequiredFieldsComplete: () =>{
+		
 		if(!unit_name.isValid) return false
 		if(!unit_rate.isValid) return false
 		if(!unit_details.isValid) return false
@@ -51,6 +52,7 @@ export default {
 			"complete": false
 		};
 		this.metadata.push(newBlock);
+		this.isUnitCreated = false;
 	},
 
 	removeAndUpdateIds: () => {
@@ -69,6 +71,7 @@ export default {
 			}
 		});
 		this.currentIndex--
+		this.isUnitCreated = true;
 	},
 
 	updateUnitName: ()=>{
@@ -124,7 +127,7 @@ export default {
 		this.isUnitImageProcessing = true;
 		const triggeredListItem = unit_photos_list.triggeredItem;
 		try{
-			for (const file of add_new_unit_image_filepicker.files) {
+			for (const file of add_new_unit_image_filepickr.files) {
 				await upload_unit_photos.run({
 					bucket: triggeredListItem.bucket,
 					path: triggeredListItem.path,

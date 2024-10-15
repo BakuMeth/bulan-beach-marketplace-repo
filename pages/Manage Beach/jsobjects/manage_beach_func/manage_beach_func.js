@@ -1,7 +1,7 @@
 export default {
 	bucket: 'media_bucket',
 	beachID: '',
-	
+
 	createNewBeach: async ()=>{
 		if(featured_photos_filepicker.files.length < 6) {
 			showAlert('Please select Six images to upload.', 'error');
@@ -9,7 +9,7 @@ export default {
 		}
 		let beachID = '';
 		beach_util_func.isProcessing = true;
-		
+
 		// Create new Beach in the Database
 		if(!beach_util_func.isBeachProfileCreated){
 			try{
@@ -50,12 +50,12 @@ export default {
 			}
 			beach_util_func.isFeaturedPhotosUploaded = true;
 			showAlert('Featured photos uploaded.', 'success');
-    }catch(error){
+		}catch(error){
 			showAlert('Error uploading beach photos.', 'error');
 			beach_util_func.isProcessing = false;
 			return
-    }
-		
+		}
+
 		beach_util_func.isProfileComplete = true;
 		beach_util_func.isProcessing = false;
 	},
@@ -66,7 +66,7 @@ export default {
 		const currItem = unit_list.triggeredItem.id;
 		const beachID = this.beachID;
 		let unitID = '';
-		
+
 		// Create the unit to the Database
 		if(!unit_util_func.isUnitCreated){
 			try{
@@ -77,7 +77,6 @@ export default {
 					details: unit_util_func.metadata[currItem].details
 				})
 				unitID = response[0].id
-				unit_util_func.isUnitCreated = true;
 			}catch(error){
 				showAlert('Error creating unit.', 'error');
 				unit_util_func.isProcessing = false;
@@ -103,14 +102,14 @@ export default {
 					path: 'beach/' + beachID + '/Unit/' + unitID
 				}) 
 			}
-    }catch(error){
+		}catch(error){
 			showAlert('Error uploading unit photos.', 'error');
 			unit_util_func.isProcessing = false;
 			return
-    }
-		
+		}
+
 		unit_util_func.metadata[currItem].complete = true;
-		unit_util_func.isUnitCreated = false;
+		unit_util_func.isUnitCreated = true;
 		unit_util_func.isProcessing = false;
 		showAlert('Unit successfully created.', 'success');
 	}

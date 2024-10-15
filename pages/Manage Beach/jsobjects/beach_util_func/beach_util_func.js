@@ -114,14 +114,14 @@ export default {
 
 	replaceFeaturedPhotots: async ()=>{
 		const triggeredListItem = featured_image_list.triggeredItem
-		const filepicker = replace_featured_filedpicker.files[0]
+		const filepickr = replace_featured_filedpickr.files[0]
 		try{
 			await upload_featured_photos.run({
 				bucket: triggeredListItem.bucket,
 				path: triggeredListItem.path,
-				file: filepicker,
-				file_name: filepicker.name,
-				content_type: filepicker.type
+				file: filepickr,
+				file_name: filepickr.name,
+				content_type: filepickr.type
 			});
 		}catch(error){
 			showAlert('Error while adding the new image', 'error');
@@ -131,7 +131,7 @@ export default {
 		try{
 			await update_beach_asset_by_id.run({
 				id : triggeredListItem.id,
-				file_name : filepicker.name,
+				file_name : filepickr.name,
 				bucket : triggeredListItem.bucket,
 				path : triggeredListItem.path,
 			});
