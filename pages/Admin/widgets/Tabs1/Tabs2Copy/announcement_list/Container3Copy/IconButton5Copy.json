@@ -1,0 +1,38 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonColor": "#ef4444",
+  "buttonVariant": "TERTIARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "iconName": "trash",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "fo0tl6yj2k",
+  "leftColumn": 61,
+  "minWidth": 50,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 11,
+  "mobileRightColumn": 15,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 15.098129272460938,
+  "parentId": "ml5i2dbasn",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "topRow": 0,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "b1covodpdh",
+  "widgetName": "IconButton5Copy"
+}

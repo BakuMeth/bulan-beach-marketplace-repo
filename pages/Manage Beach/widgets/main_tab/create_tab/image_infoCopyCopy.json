@@ -1,0 +1,57 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 27,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "fontSize"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "0.775rem",
+  "fontStyle": "ITALIC",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "x9b4858519",
+  "leftColumn": 44,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 16,
+  "mobileRightColumn": 28,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "originalBottomRow": 27,
+  "originalTopRow": 23,
+  "overflow": "NONE",
+  "parentId": "45myakhgrx",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 56,
+  "shouldTruncate": false,
+  "text": "**Six images are required",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "textStyle": "HEADING",
+  "topRow": 23,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "o7hv1sgvza",
+  "widgetName": "image_infoCopyCopy"
+}

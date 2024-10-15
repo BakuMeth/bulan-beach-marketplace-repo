@@ -1,0 +1,62 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 7,
+  "bottomRowBeforeCollapse": 7,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "SECONDARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{beach_table.selectedRowIndex === -1 ? true : false}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "fhnfctbu8k",
+  "leftColumn": 39,
+  "minWidth": 120,
+  "mobileBottomRow": 71,
+  "mobileLeftColumn": 16,
+  "mobileRightColumn": 32,
+  "mobileTopRow": 67,
+  "needsErrorInfo": false,
+  "onClick": "{{delete_func.deleteBeach(beach_table.selectedRow.id)}}",
+  "originalBottomRow": 7,
+  "originalTopRow": 2,
+  "parentColumnSpace": 19.8125,
+  "parentId": "y3teb7haba",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 46,
+  "text": "Delete",
+  "topRow": 2,
+  "topRowBeforeCollapse": 2,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "n7jpbyermi",
+  "widgetName": "beach_delete_button"
+}

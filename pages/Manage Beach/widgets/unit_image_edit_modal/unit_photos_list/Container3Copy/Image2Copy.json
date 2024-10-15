@@ -1,0 +1,37 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 32,
+  "boxShadow": "none",
+  "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+  "dynamicBindingPathList": [
+    {
+      "key": "image"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "{{currentItem.file_url}}",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "8dmxpn5z5a",
+  "leftColumn": 0,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 16,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "objectFit": "cover",
+  "parentId": "7308pfh1u8",
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "topRow": 0,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "7ssi8i7q3b",
+  "widgetName": "Image2Copy"
+}

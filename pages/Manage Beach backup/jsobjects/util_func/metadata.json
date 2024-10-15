@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "66f3bb1136a3695bb56ff03e_cdaad41e-1896-49d6-9b25-413575fb6f7a",
+  "id": "Manage Beach backup_util_func",
+  "unpublishedCollection": {
+    "name": "util_func",
+    "pageId": "Manage Beach backup",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "defaultTab",
+        "value": "'Beach Info'"
+      }
+    ]
+  }
+}

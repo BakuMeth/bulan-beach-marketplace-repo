@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "TERTIARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "cross",
+  "iconSize": 24,
+  "isDisabled": "{{unit_util_func.isUnitImageProcessing ? true : false}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "p9mtpo65rm",
+  "leftColumn": 58,
+  "minWidth": 50,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 58,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onClick": "{{closeModal(unit_image_edit_modal.name);}}",
+  "parentId": "oyk6o70j36",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "topRow": 0,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "1ib6ebbyf1",
+  "widgetName": "IconButton2"
+}

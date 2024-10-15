@@ -1,0 +1,37 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "buttonColor": "#494446",
+  "buttonVariant": "TERTIARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconName": "notifications",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "0ozhnwe73z",
+  "leftColumn": 54,
+  "minWidth": 50,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 51,
+  "mobileRightColumn": 55,
+  "mobileTopRow": 2,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 56,
+  "topRow": 1,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "7ihiamjmby",
+  "widgetName": "notif_bell"
+}

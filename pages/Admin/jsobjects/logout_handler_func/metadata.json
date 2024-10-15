@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66f3bb1136a3695bb56ff03e_fe03f68d-710b-44f3-be98-4119541cf513",
+  "id": "Admin_logout_handler_func",
+  "unpublishedCollection": {
+    "name": "logout_handler_func",
+    "pageId": "Admin",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

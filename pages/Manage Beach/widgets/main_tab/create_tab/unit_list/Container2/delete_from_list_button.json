@@ -1,0 +1,66 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonColor": "{{currentItem.complete === true ? '#15803d' : '#ef4444'}}",
+  "buttonVariant": "TERTIARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "iconName"
+    },
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    },
+    {
+      "key": "iconName"
+    },
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "{{currentItem.complete === true ? 'tick' : 'trash'}}",
+  "isDisabled": "{{unit_util_func.isProcessing === true || unit_util_func.isUnitCreated === true ? true : false}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "3v2vc304wp",
+  "leftColumn": 60,
+  "minWidth": 50,
+  "mobileBottomRow": 9,
+  "mobileLeftColumn": 33,
+  "mobileRightColumn": 37,
+  "mobileTopRow": 5,
+  "needsErrorInfo": false,
+  "onClick": "{{unit_util_func.removeAndUpdateIds()}}",
+  "parentColumnSpace": 6.9921875,
+  "parentId": "wtvv0vptub",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "topRow": 0,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "yo7ci5yjxd",
+  "widgetName": "delete_from_list_button"
+}

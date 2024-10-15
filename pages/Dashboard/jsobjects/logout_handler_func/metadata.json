@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66e5c7d440cad44159231489_91f800fe-820c-4efe-93cc-413a0678d44a",
+  "id": "Dashboard_logout_handler_func",
+  "unpublishedCollection": {
+    "name": "logout_handler_func",
+    "pageId": "Dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

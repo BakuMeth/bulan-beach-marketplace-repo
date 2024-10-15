@@ -1,0 +1,60 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowDialCodeChange": false,
+  "allowFormatting": true,
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 45,
+  "boxShadow": "none",
+  "defaultDialCode": "+63",
+  "defaultText": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "validation"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "errorMessage": "Invalid number format",
+  "iconAlign": "left",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "8unn27suv8",
+  "label": "Phone Number",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 5,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 45,
+  "mobileLeftColumn": 5,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 38,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 5.0549163818359375,
+  "parentId": "f5yn1hxqze",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 56,
+  "topRow": 38,
+  "type": "PHONE_INPUT_WIDGET",
+  "validation": "{{sign_up_phone_number.text.length === 10}}",
+  "version": 1,
+  "widgetId": "u6iye8tngt",
+  "widgetName": "sign_up_phone_number"
+}

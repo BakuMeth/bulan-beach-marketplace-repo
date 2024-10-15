@@ -1,0 +1,179 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 44,
+  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+  "buttonVariant": "SECONDARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "groupButtons.groupButton2.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton3.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonma6ihsdf3x.buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButton3.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton2.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton3.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton68pxye5bk3.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton68pxye5bk3.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonma6ihsdf3x.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonma6ihsdf3x.buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton3.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonma6ihsdf3x.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton2": {
+      "buttonColor": "{{(util_func.defaultTab === 'Beach Info') ? appsmith.theme.colors.primaryColor : '#494446'}}",
+      "buttonType": "SIMPLE",
+      "iconAlign": "right",
+      "iconName": "info-sign",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Beach Info",
+      "menuItems": {},
+      "onClick": "{{util_func.setDefaultTab('Beach Info')}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton3": {
+      "buttonColor": "{{(util_func.defaultTab === 'User Management') ? appsmith.theme.colors.primaryColor : '#494446'}}",
+      "buttonType": "SIMPLE",
+      "iconAlign": "right",
+      "iconName": "user",
+      "id": "groupButton3",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "User Management",
+      "menuItems": {
+        "menuItem1": {
+          "backgroundColor": "#FFFFFF",
+          "id": "menuItem1",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "First Option",
+          "onClick": "",
+          "widgetId": ""
+        },
+        "menuItem2": {
+          "backgroundColor": "#FFFFFF",
+          "id": "menuItem2",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Second Option",
+          "onClick": "",
+          "widgetId": ""
+        },
+        "menuItem3": {
+          "backgroundColor": "#DD4B34",
+          "iconAlign": "right",
+          "iconColor": "#FFFFFF",
+          "iconName": "trash",
+          "id": "menuItem3",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Delete",
+          "onClick": "",
+          "textColor": "#FFFFFF",
+          "widgetId": ""
+        }
+      },
+      "onClick": "{{util_func.setDefaultTab('User Management')}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButtonma6ihsdf3x": {
+      "buttonColor": "{{(util_func.defaultTab === 'Announcements') ? appsmith.theme.colors.primaryColor : '#494446'}}",
+      "buttonType": "SIMPLE",
+      "iconAlign": "right",
+      "iconName": "feed",
+      "id": "groupButtonma6ihsdf3x",
+      "index": 0,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Annoucements",
+      "menuItems": {},
+      "onClick": "{{util_func.setDefaultTab('Announcements')}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "9lu75f1cy8"
+    }
+  },
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "3sr357al0e",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "orientation": "vertical",
+  "originalBottomRow": 44,
+  "originalTopRow": 20,
+  "parentColumnSpace": 15.78515625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 8,
+  "topRow": 20,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "o4kptqqa3d",
+  "widgetName": "ButtonGroup2"
+}

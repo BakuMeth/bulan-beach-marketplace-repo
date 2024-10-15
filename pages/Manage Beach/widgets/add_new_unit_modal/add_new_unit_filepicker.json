@@ -1,0 +1,66 @@
+{
+  "allowedFileTypes": [
+    "image/*"
+  ],
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 23,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onFilesSelected"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onFilesSelected"
+    }
+  ],
+  "dynamicTyping": true,
+  "fileDataType": "Binary",
+  "files": [],
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{unit_util_func.isUnitAddProcessing || !unit_util_func.isAddUnitRequiredFieldsComplete() ? true : false}}",
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "a5gb1w1c8x",
+  "label": "Select unit images",
+  "leftColumn": 35,
+  "maxFileSize": "2",
+  "maxNumFiles": "6",
+  "minWidth": 120,
+  "mobileBottomRow": 21,
+  "mobileLeftColumn": 33,
+  "mobileRightColumn": 49,
+  "mobileTopRow": 17,
+  "needsErrorInfo": false,
+  "onFilesSelected": "{{unit_util_func.addNewUnit()}}",
+  "parentColumnSpace": 13.5625,
+  "parentId": "g45pywxrfw",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 57,
+  "selectedFiles": [],
+  "topRow": 19,
+  "type": "FILE_PICKER_WIDGET_V2",
+  "version": 1,
+  "widgetId": "3ayrcee1v1",
+  "widgetName": "add_new_unit_filepicker"
+}

@@ -1,0 +1,28 @@
+{
+  "gitSyncId": "66f3bb1136a3695bb56ff03e_d433734d-2444-482b-a756-158fe3706f6a",
+  "id": "Manage Beach backup_beach_util_func",
+  "unpublishedCollection": {
+    "name": "beach_util_func",
+    "pageId": "Manage Beach backup",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "isProfileComplete",
+        "value": "false"
+      },
+      {
+        "name": "isBeachProfileCreated",
+        "value": "false"
+      },
+      {
+        "name": "isFeaturedPhotosUploaded",
+        "value": "false"
+      },
+      {
+        "name": "isProcessing",
+        "value": "false"
+      }
+    ]
+  }
+}

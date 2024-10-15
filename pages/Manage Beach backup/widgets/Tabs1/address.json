@@ -1,0 +1,66 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 26,
+  "boxShadow": "none",
+  "defaultText": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "errorMessage": "",
+  "iconAlign": "left",
+  "inputType": "MULTI_LINE_TEXT",
+  "isDisabled": "{{beach_util_func.isBeachProfileCreated === true || beach_util_func.isProcessing === true ? true : false}}",
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "s0og5de6ux",
+  "label": "Address",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 32,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "originalBottomRow": 26,
+  "originalTopRow": 16,
+  "parentColumnSpace": 19.5,
+  "parentId": "e46087il71",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 52,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 16,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "9w41q2dvaf",
+  "widgetName": "address"
+}

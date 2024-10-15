@@ -1,0 +1,72 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 6,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "iconName": "menu",
+  "isCompact": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "9t63aupr86",
+  "label": "",
+  "leftColumn": 59,
+  "menuColor": "#ffffff",
+  "menuItems": {
+    "menuItem1": {
+      "iconName": "wrench",
+      "id": "menuItem1",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Manage Users",
+      "widgetId": ""
+    },
+    "menuItem2": {
+      "iconName": "user",
+      "id": "menuItem2",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Account",
+      "widgetId": ""
+    },
+    "menuItem3": {
+      "iconName": "log-out",
+      "id": "menuItem3",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Logout",
+      "widgetId": ""
+    }
+  },
+  "menuItemsSource": "STATIC",
+  "menuVariant": "PRIMARY",
+  "mobileBottomRow": 18,
+  "mobileLeftColumn": 27,
+  "mobileRightColumn": 43,
+  "mobileTopRow": 14,
+  "needsErrorInfo": false,
+  "originalBottomRow": 17,
+  "originalTopRow": 13,
+  "parentColumnSpace": 17.9375,
+  "parentId": "29q4yg78lb",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "topRow": 2,
+  "type": "MENU_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "ffnp4zk54i",
+  "widgetName": "MenuButton1"
+}

@@ -1,0 +1,68 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowDialCodeChange": false,
+  "allowFormatting": true,
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 16,
+  "boxShadow": "none",
+  "defaultDialCode": "+63",
+  "defaultText": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "validation"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "errorMessage": "Invalid Phone Number",
+  "iconAlign": "left",
+  "isDisabled": "{{beach_util_func.isBeachProfileCreated === true || beach_util_func.isProcessing === true ? true : false}}",
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "d1pezts72b",
+  "label": "Phone Number",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 32,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 18,
+  "mobileLeftColumn": 28,
+  "mobileRightColumn": 48,
+  "mobileTopRow": 11,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 19.5,
+  "parentId": "e46087il71",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 52,
+  "topRow": 9,
+  "type": "PHONE_INPUT_WIDGET",
+  "validation": "{{phone_number.text.length === 10}}",
+  "version": 1,
+  "widgetId": "p12089lg35",
+  "widgetName": "phone_number"
+}

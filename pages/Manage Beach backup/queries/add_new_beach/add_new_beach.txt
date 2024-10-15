@@ -1,0 +1,9 @@
+{
+	"owner_id": "{{appsmith.store.userID}}",
+	"owner_name": "{{appsmith.store.userFName + ' ' + appsmith.store.userLName}}",
+	"name": "{{this.params.name}}",
+	"email": "{{this.params.email}}",
+	"phone_number": "{{this.params.phone_number}}",
+	"address": "{{this.params.address}}",
+	"description": "{{this.params.description}}"
+}

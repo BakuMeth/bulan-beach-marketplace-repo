@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 54,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "0.875rem",
+  "fontStyle": "ITALIC",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "rctwjxevir",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 28,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 18,
+  "mobileTopRow": 24,
+  "needsErrorInfo": false,
+  "originalBottomRow": 54,
+  "originalTopRow": 49,
+  "overflow": "NONE",
+  "parentColumnSpace": 17.9521484375,
+  "parentId": "45myakhgrx",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 25,
+  "shouldTruncate": false,
+  "text": "*All of the fields and images are required. You can edit this values/images anytime once your beach profile is created.",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 49,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "eviknv1zvt",
+  "widgetName": "Text16Copy1"
+}

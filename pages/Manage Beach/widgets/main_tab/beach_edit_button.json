@@ -1,0 +1,98 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "menuColor"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "menuItems.menuItem1.onClick"
+    },
+    {
+      "key": "menuItems.menuItemswqu7hv0um.onClick"
+    },
+    {
+      "key": "menuItems.menuItem2.onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "menuItems.menuItem2.onClick"
+    },
+    {
+      "key": "menuItems.menuItem1.onClick"
+    },
+    {
+      "key": "menuItems.menuItemswqu7hv0um.onClick"
+    }
+  ],
+  "iconAlign": "right",
+  "iconName": "symbol-triangle-down",
+  "isCompact": false,
+  "isDisabled": "{{beach_table.selectedRowIndex === -1 ? true : false}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "dev1ghk84l",
+  "label": "Edit",
+  "leftColumn": 46,
+  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+  "menuItems": {
+    "menuItem1": {
+      "id": "menuItem1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Information",
+      "onClick": "{{showModal(edit_beach_info_modal.name)}}",
+      "widgetId": ""
+    },
+    "menuItem2": {
+      "id": "menuItem2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Featured Photos",
+      "onClick": "{{beach_util_func.getFeaturePhotos(beach_table.selectedRow.id)}}",
+      "widgetId": ""
+    },
+    "menuItemswqu7hv0um": {
+      "id": "menuItemswqu7hv0um",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Status",
+      "onClick": "{{showModal(beach_change_status_modal.name)}}",
+      "widgetId": "qr11buip8y"
+    }
+  },
+  "menuItemsSource": "STATIC",
+  "menuVariant": "SECONDARY",
+  "mobileBottomRow": 71,
+  "mobileLeftColumn": 15,
+  "mobileRightColumn": 31,
+  "mobileTopRow": 67,
+  "needsErrorInfo": false,
+  "originalBottomRow": 71,
+  "originalTopRow": 67,
+  "parentColumnSpace": 19.8125,
+  "parentId": "y3teb7haba",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "renderMode": "CANVAS",
+  "rightColumn": 53,
+  "topRow": 2,
+  "type": "MENU_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "v69ode7gw4",
+  "widgetName": "beach_edit_button"
+}

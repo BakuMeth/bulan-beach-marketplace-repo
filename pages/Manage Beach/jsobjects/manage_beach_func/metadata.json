@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66f3bb1136a3695bb56ff03e_479e5009-29c7-4057-aec3-640de257600c",
+  "id": "Manage Beach_manage_beach_func",
+  "unpublishedCollection": {
+    "name": "manage_beach_func",
+    "pageId": "Manage Beach",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "bucket",
+        "value": "'media_bucket'"
+      },
+      {
+        "name": "beachID",
+        "value": "''"
+      }
+    ]
+  }
+}

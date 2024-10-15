@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66f3bb1136a3695bb56ff03e_77ce1b21-0844-477b-9755-c173a969b6fd",
+  "id": "test_bulk_image_upload",
+  "unpublishedCollection": {
+    "name": "bulk_image_upload",
+    "pageId": "test",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "allowedFileTypes": [
+    "image/*"
+  ],
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 23,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "onFilesSelected"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onFilesSelected"
+    }
+  ],
+  "dynamicTyping": true,
+  "fileDataType": "Binary",
+  "files": [],
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{beach_util_func.isRequiredFieldsComplete() === false || beach_util_func.isFeaturedPhotosUploaded === true || beach_util_func.isProcessing === true ? true : false}}",
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "ee6sqraadc",
+  "label": "Select Images to Upload",
+  "leftColumn": 44,
+  "maxFileSize": 5,
+  "maxNumFiles": "6",
+  "minWidth": 120,
+  "mobileBottomRow": 19,
+  "mobileLeftColumn": 28,
+  "mobileRightColumn": 44,
+  "mobileTopRow": 15,
+  "needsErrorInfo": false,
+  "onFilesSelected": "{{manage_beach_func.createNewBeach()}}",
+  "originalBottomRow": 23,
+  "originalTopRow": 19,
+  "parentColumnSpace": 11.9453125,
+  "parentId": "yy5kfe2utb",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 60,
+  "selectedFiles": [],
+  "topRow": 19,
+  "type": "FILE_PICKER_WIDGET_V2",
+  "version": 1,
+  "widgetId": "er8ihs9nip",
+  "widgetName": "featured_photos_filepicker"
+}

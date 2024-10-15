@@ -1,0 +1,211 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 21,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "dynamicBindingPathList": [
+    {
+      "key": "groupButtons.groupButton2.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton3.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton9nirzjneuy.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton1.iconName"
+    },
+    {
+      "key": "groupButtons.groupButton1.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton9nirzjneuy.iconName"
+    },
+    {
+      "key": "groupButtons.groupButton3.iconName"
+    },
+    {
+      "key": "groupButtons.groupButton2.iconName"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton9nirzjneuy.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1.iconName"
+    },
+    {
+      "key": "groupButtons.groupButton1.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton9nirzjneuy.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton3.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton2.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton9nirzjneuy.iconName"
+    },
+    {
+      "key": "groupButtons.groupButton3.iconName"
+    },
+    {
+      "key": "groupButtons.groupButton2.iconName"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton9nirzjneuy.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "{{util_func.defaultMainTab === 'BeachTab' ? '#e3974f' : appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "{{util_func.defaultMainTab == 'BeachTab' ? 'flag' : ''}}",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Beach",
+      "menuItems": {},
+      "onClick": "{{util_func.setDefaultMainTab('BeachTab')}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "{{util_func.defaultMainTab === 'AnnouncementsTab' ? '#e3974f' : appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "{{util_func.defaultMainTab == 'AnnouncementsTab' ? 'feed' : ''}}",
+      "id": "groupButton2",
+      "index": 3,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Announcements",
+      "menuItems": {},
+      "onClick": "{{util_func.setDefaultMainTab('AnnouncementsTab')}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton3": {
+      "buttonColor": "{{util_func.defaultMainTab === 'ReportsTab' ? '#e3974f' : appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "{{util_func.defaultMainTab == 'ReportsTab' ? 'chart' : ''}}",
+      "id": "groupButton3",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Reports",
+      "menuItems": {
+        "menuItem1": {
+          "backgroundColor": "#FFFFFF",
+          "id": "menuItem1",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "First Option",
+          "onClick": "",
+          "widgetId": ""
+        },
+        "menuItem2": {
+          "backgroundColor": "#FFFFFF",
+          "id": "menuItem2",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Second Option",
+          "onClick": "",
+          "widgetId": ""
+        },
+        "menuItem3": {
+          "backgroundColor": "#DD4B34",
+          "iconAlign": "right",
+          "iconColor": "#FFFFFF",
+          "iconName": "trash",
+          "id": "menuItem3",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Delete",
+          "onClick": "",
+          "textColor": "#FFFFFF",
+          "widgetId": ""
+        }
+      },
+      "onClick": "{{util_func.setDefaultMainTab('ReportsTab')}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton9nirzjneuy": {
+      "buttonColor": "{{util_func.defaultMainTab === 'ReservationsTab' ? '#e3974f' : appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "{{util_func.defaultMainTab == 'ReservationsTab' ? 'th-list' : ''}}",
+      "id": "groupButton9nirzjneuy",
+      "index": 1,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Reservations",
+      "menuItems": {},
+      "onClick": "{{util_func.setDefaultMainTab('ReservationsTab')}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "fo9j955c68"
+    }
+  },
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "jmphdvkqzz",
+  "leftColumn": 5,
+  "minWidth": 450,
+  "mobileBottomRow": 33,
+  "mobileLeftColumn": 9,
+  "mobileRightColumn": 33,
+  "mobileTopRow": 29,
+  "needsErrorInfo": false,
+  "orientation": "horizontal",
+  "originalBottomRow": 24,
+  "originalTopRow": 19,
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 41,
+  "topRow": 16,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "tfxtu0b480",
+  "widgetName": "menu_buttons"
+}

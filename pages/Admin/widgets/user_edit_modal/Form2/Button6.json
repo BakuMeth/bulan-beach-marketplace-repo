@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 35,
+  "boxShadow": "none",
+  "buttonColor": "#1fb745",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "eng5bktdsp",
+  "leftColumn": 1,
+  "minWidth": 120,
+  "mobileBottomRow": 37,
+  "mobileLeftColumn": 46,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 33,
+  "needsErrorInfo": false,
+  "onClick": "{{user_management_func.updateUserProfileByID();}}",
+  "originalBottomRow": 35,
+  "originalTopRow": 31,
+  "parentId": "0h7yuh358q",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": true,
+  "responsiveBehavior": "hug",
+  "rightColumn": 62,
+  "text": "SAVE",
+  "topRow": 31,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "82qp01rb28",
+  "widgetName": "Button6"
+}

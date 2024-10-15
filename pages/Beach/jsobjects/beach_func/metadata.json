@@ -1,0 +1,36 @@
+{
+  "gitSyncId": "66f3bb1136a3695bb56ff03e_9541b1cd-366a-4267-b27e-3bd0675c6f43",
+  "id": "Beach_beach_func",
+  "unpublishedCollection": {
+    "name": "beach_func",
+    "pageId": "Beach",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "defaultBeachName",
+        "value": "'BEACH_NAME'"
+      },
+      {
+        "name": "defaultOwnerName",
+        "value": "'OWNER_NAME'"
+      },
+      {
+        "name": "defaultBeachAddress",
+        "value": "'BEACH_ADDRESS'"
+      },
+      {
+        "name": "defaultBeachDescription",
+        "value": "'BEACH_DESCRIPTION'"
+      },
+      {
+        "name": "unitCollageData",
+        "value": "[]"
+      },
+      {
+        "name": "unitReserveData",
+        "value": "[]"
+      }
+    ]
+  }
+}

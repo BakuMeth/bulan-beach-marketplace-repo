@@ -1,0 +1,7 @@
+{
+	"id": "{{this.params.id}}",
+	"file_url": "{{'https://ifthncqcxbdnyjcrwhlq.supabase.co/storage/v1/object/public/' + this.params.bucket + '/' + this.params.path + '/' + this.params.file_name}}",
+	"file_name": "{{this.params.file_name}}",
+	"bucket": "{{this.params.bucket}}",
+	"path": "{{this.params.path}}"
+}

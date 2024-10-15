@@ -1,0 +1,47 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 29,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "l5jous1541",
+  "leftColumn": 41,
+  "minWidth": 120,
+  "mobileBottomRow": 30,
+  "mobileLeftColumn": 35,
+  "mobileRightColumn": 51,
+  "mobileTopRow": 26,
+  "needsErrorInfo": false,
+  "originalBottomRow": 30,
+  "originalTopRow": 26,
+  "parentColumnSpace": 15.40625,
+  "parentId": "p4wxwpkow0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 51,
+  "text": "Approve",
+  "topRow": 25,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "slz1bsrhrf",
+  "widgetName": "Button14"
+}

@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 23,
+  "boxShadow": "none",
+  "defaultText": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "errorMessage": "Invalid Email format",
+  "iconAlign": "left",
+  "inputType": "EMAIL",
+  "isDisabled": "{{beach_util_func.isBeachProfileCreated === true || beach_util_func.isProcessing === true ? true : false}}",
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "s0og5de6ux",
+  "label": "Email",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 4,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 19.5,
+  "parentId": "e46087il71",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 25,
+  "shouldAllowAutofill": true,
+  "showStepArrows": false,
+  "topRow": 16,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "esrq5q58jn",
+  "widgetName": "email"
+}

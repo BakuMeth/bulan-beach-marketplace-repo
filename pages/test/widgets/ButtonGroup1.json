@@ -1,0 +1,125 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 146,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  "buttonVariant": "TERTIARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "dynamicBindingPathList": [
+    {
+      "key": "groupButtons.groupButton1.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton2.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton3.buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "heart",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Favorite",
+      "menuItems": {},
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "add",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Add",
+      "menuItems": {},
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton3": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "MENU",
+      "iconName": "more",
+      "id": "groupButton3",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "More",
+      "menuItems": {
+        "menuItem1": {
+          "backgroundColor": "#FFFFFF",
+          "id": "menuItem1",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "First Option",
+          "onClick": "",
+          "widgetId": ""
+        },
+        "menuItem2": {
+          "backgroundColor": "#FFFFFF",
+          "id": "menuItem2",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Second Option",
+          "onClick": "",
+          "widgetId": ""
+        },
+        "menuItem3": {
+          "backgroundColor": "#DD4B34",
+          "iconAlign": "right",
+          "iconColor": "#FFFFFF",
+          "iconName": "trash",
+          "id": "menuItem3",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Delete",
+          "onClick": "",
+          "textColor": "#FFFFFF",
+          "widgetId": ""
+        }
+      },
+      "placement": "CENTER",
+      "widgetId": ""
+    }
+  },
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "3sqkgpas8r",
+  "leftColumn": 17,
+  "minWidth": 450,
+  "mobileBottomRow": 144,
+  "mobileLeftColumn": 17,
+  "mobileRightColumn": 41,
+  "mobileTopRow": 140,
+  "needsErrorInfo": false,
+  "orientation": "horizontal",
+  "originalBottomRow": 146,
+  "originalTopRow": 142,
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 54,
+  "topRow": 142,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "ocd5057ah9",
+  "widgetName": "ButtonGroup1"
+}

@@ -1,0 +1,49 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 54,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY",
+  "buttonVariant": "SECONDARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "dic6trwo9r",
+  "leftColumn": 43,
+  "minWidth": 120,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 47,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "onClick": "{{closeModal(edit_beach_info_modal.name);}}",
+  "parentId": "jxks430vqa",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 53,
+  "text": "Close",
+  "topRow": 50,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "0tcn8axes5",
+  "widgetName": "edit_beach_close_button"
+}

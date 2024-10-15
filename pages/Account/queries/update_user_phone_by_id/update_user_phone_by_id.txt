@@ -1,0 +1,3 @@
+{
+	"phone_number": "{{update_user_phone.dialCode + update_user_phone.value}}"
+}

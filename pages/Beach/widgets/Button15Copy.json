@@ -1,0 +1,57 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 13,
+  "boxShadow": "none",
+  "buttonColor": "#494446",
+  "buttonVariant": "TERTIARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "l5jous1541",
+  "leftColumn": 12,
+  "minWidth": 120,
+  "mobileBottomRow": 16,
+  "mobileLeftColumn": 17,
+  "mobileRightColumn": 33,
+  "mobileTopRow": 12,
+  "needsErrorInfo": false,
+  "onClick": "{{navigateTo('Beach', {}, 'SAME_WINDOW');}}",
+  "originalBottomRow": 14,
+  "originalTopRow": 10,
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "START",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 20,
+  "text": "{{beach_func.defaultBeachName}}",
+  "topRow": 9,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "ffiesudv4f",
+  "widgetName": "Button15Copy"
+}

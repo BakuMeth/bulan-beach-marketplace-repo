@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 26,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "TERTIARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "minus",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "da4plfce0v",
+  "leftColumn": 40,
+  "minWidth": 50,
+  "mobileBottomRow": 17,
+  "mobileLeftColumn": 40,
+  "mobileRightColumn": 44,
+  "mobileTopRow": 13,
+  "needsErrorInfo": false,
+  "onClick": "{{reserve_func.infant > 0 ?reserve_func.infant-- : reserve_func.infant}}",
+  "originalBottomRow": 27,
+  "originalTopRow": 23,
+  "parentColumnSpace": 5.29083251953125,
+  "parentId": "i4e0ynk25d",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 47,
+  "topRow": 22,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "85zruv4vze",
+  "widgetName": "infant_minus_btn"
+}

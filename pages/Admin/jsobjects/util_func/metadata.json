@@ -1,0 +1,32 @@
+{
+  "gitSyncId": "66f3bb1136a3695bb56ff03e_bebc4dc2-43f6-47bf-a59a-985dd1101186",
+  "id": "Admin_util_func",
+  "unpublishedCollection": {
+    "name": "util_func",
+    "pageId": "Admin",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "defaultTab",
+        "value": "'Announcements'"
+      },
+      {
+        "name": "operational",
+        "value": "[{\n  \"name\": \"Operational\",\n  \"code\": true\n}, {\n  \"name\": \"Maintenance\",\n  \"code\": false\n}]"
+      },
+      {
+        "name": "_2023",
+        "value": "[{\n  \"x\": \"Jan\",\n  \"y\": 63\n}, {\n  \"x\": \"Feb\",\n  \"y\": 30\n}, {\n  \"x\": \"Mar\",\n  \"y\": 22\n}, {\n  \"x\": \"Apr\",\n  \"y\": 73\n}, {\n  \"x\": \"May\",\n  \"y\": 111\n}, {\n  \"x\": \"Jun\",\n  \"y\": 159\n}, {\n  \"x\": \"Jul\",\n  \"y\": 55\n}, {\n  \"x\": \"Aug\",\n  \"y\": 22\n}, {\n  \"x\": \"Sept\",\n  \"y\": 34\n}, {\n  \"x\": \"Oct\",\n  \"y\": 44\n}, {\n  \"x\": \"Nov\",\n  \"y\": 23\n}, {\n  \"x\": \"Dec\",\n  \"y\": 123\n}]"
+      },
+      {
+        "name": "_2024",
+        "value": "[{\n  \"x\": \"Jan\",\n  \"y\": 74\n}, {\n  \"x\": \"Feb\",\n  \"y\": 26\n}, {\n  \"x\": \"Mar\",\n  \"y\": 44\n}, {\n  \"x\": \"Apr\",\n  \"y\": 88\n}, {\n  \"x\": \"May\",\n  \"y\": 143\n}, {\n  \"x\": \"Jun\",\n  \"y\": 92\n}, {\n  \"x\": \"Jul\",\n  \"y\": 46\n}, {\n  \"x\": \"Aug\",\n  \"y\": 32\n}, {\n  \"x\": \"Sept\",\n  \"y\": 21\n}, {\n  \"x\": \"Oct\",\n  \"y\": 27\n}, {\n  \"x\": \"Nov\",\n  \"y\": 56\n}, {\n  \"x\": \"Dec\",\n  \"y\": 98\n}]"
+      },
+      {
+        "name": "defaultYear",
+        "value": "util_func._2024"
+      }
+    ]
+  }
+}

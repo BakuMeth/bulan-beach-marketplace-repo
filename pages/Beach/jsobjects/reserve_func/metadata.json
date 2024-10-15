@@ -1,0 +1,32 @@
+{
+  "gitSyncId": "66f3bb1136a3695bb56ff03e_9cebb2e8-87e0-41eb-8d88-d35fdec8a336",
+  "id": "Beach_reserve_func",
+  "unpublishedCollection": {
+    "name": "reserve_func",
+    "pageId": "Beach",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "defaultTab",
+        "value": "'Tab 1'"
+      },
+      {
+        "name": "adult",
+        "value": "1"
+      },
+      {
+        "name": "child",
+        "value": "0"
+      },
+      {
+        "name": "infant",
+        "value": "0"
+      },
+      {
+        "name": "pet",
+        "value": "0"
+      }
+    ]
+  }
+}

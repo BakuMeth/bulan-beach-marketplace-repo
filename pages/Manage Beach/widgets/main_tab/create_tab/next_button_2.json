@@ -1,0 +1,65 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 52,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "right",
+  "iconName": "double-chevron-right",
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{beach_util_func.isProfileComplete === true ? false : true}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "nafrfk2hph",
+  "leftColumn": 57,
+  "minWidth": 120,
+  "mobileBottomRow": 28,
+  "mobileLeftColumn": 40,
+  "mobileRightColumn": 56,
+  "mobileTopRow": 24,
+  "needsErrorInfo": false,
+  "onClick": "{{\nutil_func.setDefaultTab('Units');\nbeach_util_func.resetBeachCreateForm()\n}}",
+  "originalBottomRow": 52,
+  "originalTopRow": 48,
+  "parentColumnSpace": 19.5,
+  "parentId": "45myakhgrx",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "text": "NEXT",
+  "topRow": 48,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "y3uyue2md7",
+  "widgetName": "next_button_2"
+}

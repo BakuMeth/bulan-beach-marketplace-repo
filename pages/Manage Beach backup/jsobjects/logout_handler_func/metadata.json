@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66f3bb1136a3695bb56ff03e_a1282dd2-3047-4962-9a2b-91db4968e4cf",
+  "id": "Manage Beach backup_logout_handler_func",
+  "unpublishedCollection": {
+    "name": "logout_handler_func",
+    "pageId": "Manage Beach backup",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

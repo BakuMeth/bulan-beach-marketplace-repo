@@ -1,0 +1,130 @@
+{
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 6,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "menuItems.menuItem3.isVisible"
+    },
+    {
+      "key": "menuItems.menuItem2.isVisible"
+    },
+    {
+      "key": "menuItems.menuItem3sb97dkqo1.isVisible"
+    },
+    {
+      "key": "menuItems.menuItem1.isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "menuItems.menuItem3.isVisible"
+    },
+    {
+      "key": "menuItems.menuItem2.isVisible"
+    },
+    {
+      "key": "menuItems.menuItem3sb97dkqo1.isVisible"
+    },
+    {
+      "key": "menuItems.menuItem1.isVisible"
+    },
+    {
+      "key": "iconName"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "menuItems.menuItem3.onClick"
+    },
+    {
+      "key": "menuItems.menuItem3sb97dkqo1.onClick"
+    },
+    {
+      "key": "menuItems.menuItem2.onClick"
+    },
+    {
+      "key": "menuItems.menuItem1.onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "menu",
+  "isCompact": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "{{appsmith.store.access_token !== null}}",
+  "key": "9t63aupr86",
+  "label": "",
+  "leftColumn": 59,
+  "menuColor": "#ffffff",
+  "menuItems": {
+    "menuItem1": {
+      "iconName": "wrench",
+      "id": "menuItem1",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": "{{appsmith.store.userProfile === \"administrator\" && appsmith.store.isSession === true}}",
+      "label": "Admin",
+      "onClick": "{{navigateTo('Admin', {}, 'SAME_WINDOW');}}",
+      "widgetId": ""
+    },
+    "menuItem2": {
+      "iconName": "user",
+      "id": "menuItem2",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": "{{appsmith.store.isSession === true}}",
+      "label": "Account",
+      "onClick": "{{navigateTo('Account', {}, 'SAME_WINDOW');}}",
+      "widgetId": ""
+    },
+    "menuItem3": {
+      "backgroundColor": "",
+      "iconName": "log-out",
+      "id": "menuItem3",
+      "index": 3,
+      "isDisabled": false,
+      "isVisible": "{{appsmith.store.isSession === true}}",
+      "label": "Logout",
+      "onClick": "{{logout_handler_func.logout()}}",
+      "widgetId": ""
+    },
+    "menuItem3sb97dkqo1": {
+      "iconName": "user",
+      "id": "menuItem3sb97dkqo1",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": "{{appsmith.store.isSession !== true}}",
+      "label": "Sign In",
+      "onClick": "{{navigateTo('Authentication', {}, 'SAME_WINDOW');}}",
+      "widgetId": "s591k8cod2"
+    }
+  },
+  "menuItemsSource": "STATIC",
+  "menuVariant": "PRIMARY",
+  "mobileBottomRow": 18,
+  "mobileLeftColumn": 27,
+  "mobileRightColumn": 43,
+  "mobileTopRow": 14,
+  "needsErrorInfo": false,
+  "originalBottomRow": 17,
+  "originalTopRow": 13,
+  "parentColumnSpace": 17.9375,
+  "parentId": "d83ke6i0zp",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "topRow": 2,
+  "type": "MENU_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "tiatndl037",
+  "widgetName": "banner_menu"
+}

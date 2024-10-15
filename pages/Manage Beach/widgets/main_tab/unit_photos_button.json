@@ -1,0 +1,70 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 52,
+  "bottomRowBeforeCollapse": 52,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "SECONDARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "media",
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{unit_table.selectedRowIndex === -1 ? true : false}}",
+  "isLoading": false,
+  "isVisible": "{{beach_util_func.isShowUnits ? true : false}}",
+  "key": "fhnfctbu8k",
+  "leftColumn": 32,
+  "minWidth": 120,
+  "mobileBottomRow": 71,
+  "mobileLeftColumn": 16,
+  "mobileRightColumn": 32,
+  "mobileTopRow": 67,
+  "needsErrorInfo": false,
+  "onClick": "{{beach_util_func.loadUnitImageURL(unit_table.selectedRow.id)}}",
+  "originalBottomRow": 52,
+  "originalTopRow": 47,
+  "parentColumnSpace": 19.8125,
+  "parentId": "y3teb7haba",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 39,
+  "text": "Images",
+  "topRow": 47,
+  "topRowBeforeCollapse": 47,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "mxhz4v2lwc",
+  "widgetName": "unit_photos_button"
+}

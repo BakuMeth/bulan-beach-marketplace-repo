@@ -1,0 +1,67 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#18181b",
+  "borderRadius": "0px",
+  "borderWidth": "1",
+  "bottomRow": 64,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  "defaultModel": "{ \"text8\": \"{{Text8.name}}\" }",
+  "displayName": "Custom",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "defaultModel"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "events": [],
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.867bcc8399fa3f897d425d72690b86e4.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "ikj8o0e109",
+  "leftColumn": 45,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 56,
+  "mobileLeftColumn": 22,
+  "mobileRightColumn": 45,
+  "mobileTopRow": 26,
+  "originalBottomRow": 63,
+  "originalTopRow": 40,
+  "parentColumnSpace": 16.6875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 60,
+  "searchTags": [
+    "external"
+  ],
+  "shouldScrollContents": true,
+  "srcDoc": {
+    "css": "body, html {\n  height: 100%;\n  margin: 0;\n}\n\n.container {\n  display: flex;\n  justify-content: center; /* Center horizontally */\n  align-items: center; /* Center vertically */\n  height: 100%;\n}\n\n.centered-div {\n  width: 300px; /* Example width */\n  height: 200px; /* Example height */\n  background-color: lightblue; /* Just for visibility */\n  text-align: center;\n  padding: 20px;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n}\n\ndiv img {\n  max-width: 100%;\n  max-height: 100%;\n  height: auto;\n  width: auto;\n  background-color: #fff;\n  border-style: none;\n  margin: 0;\n  width: 300px; /* Example width */\n  height: 200px;\n}",
+    "html": "<head>\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css\"/>\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css\"/>\n\t<script src=\"https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js\"></script>\n</head>\n\n<body>\n    <div class=\"container\">\n\n       <div id=\"img_01\"><img class=\"image\" src=\"https://ifthncqcxbdnyjcrwhlq.supabase.co/storage/v1/object/public/media_bucket/1.jpeg?t=2024-09-24T17%3A19%3A03.583Z\"></div>\n\t\t\t\t\t<div id=\"img_02\"><img class=\"image\" src=\"https://ifthncqcxbdnyjcrwhlq.supabase.co/storage/v1/object/public/media_bucket/2.webp?t=2024-09-24T17%3A19%3A51.633Z\"></div>\n       \n    </div>\n\t\t\t<script type=\"text/javascript\" src=\"//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js\"></script>\n</body>",
+    "js": "appsmith.onReady(() => {\n  $(\".container\").slick({\n    dots: true,\n    arrows: false,\n    infinite: true,\n    autoplay: false,\n    autoplaySpeed: 2000,\n    appendDots: $(\"appsmith.model.text\"),\n    // appendArrows: $(\".centered-div\"),\n    focusOnSelect: false,\n    speed: 100,\n    swipe: true,\n    touchMove: true\n  });\n  $('#slick').on('swipe', function (event, slick, direction) {\n    //console.log(direction);\n  });\n  $('#slick').on('edge', function (event, slick, direction) {\n    //console.log('edge was hit')\n  });\n  $('#slick').on('beforeChange', function (event, slick, currentSlide, nextSlide) {\n    //console.log(nextSlide);\n  });\n  $('#slick').on('afterChange', function (event, slick, currentSlide) {\n    appsmith.updateModel({\n      currentSlide: currentSlide\n    });\n    console.log(currentSlide);\n  });\n  appsmith.onUiChange(() => {\n\n    //$(\"#slick\").slick('setPosition')\n  });\n});"
+  },
+  "tags": [
+    "Display"
+  ],
+  "theme": "{{appsmith.theme}}",
+  "topRow": 40,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "body, html {\n\theight: 100%;\n\tmargin: 0;\n}\n.container {\n\tdisplay: flex;\n\tjustify-content: center; /* Center horizontally */\n\talign-items: center;    /* Center vertically */\n\theight: 100%;\n}\n.centered-div {\n\twidth: 300px; /* Example width */\n\theight: 200px; /* Example height */\n\tbackground-color: lightblue; /* Just for visibility */\n\ttext-align: center;\n\tpadding: 20px;\n\tbox-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n}\ndiv img {\n\tmax-width: 100%;\n\tmax-height: 100%;\n\theight: auto;\n\twidth: auto;\n\tbackground-color: #fff;\n\tborder-style: none;\n\tmargin: 0;\nwidth: 300px; /* Example width */\n\theight: 200px;\n\n  \n}\n// .slick-next {\n// \n\t// background-color: red,\n// }\n// .slick-prev {\n// \n\t// background-color: blue;\n\t// z-index: 1\n// }\n// .slick-dots {\n\t// top: 80%;\n\t// position: relative;\n// }\n// .slick-prev:before,\n// .slick-next:before,\n// .slick-dots {\n\t // color:#e9e2e2;\n\t// z-index:1;\n// }",
+    "html": "<head>\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css\"/>\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css\"/>\n\t<script src=\"https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js\"></script>\n</head>\n\n<body>\n    <div class=\"container\">\n\n       <div id=\"img_01\"><img class=\"image\" src=\"https://ifthncqcxbdnyjcrwhlq.supabase.co/storage/v1/object/public/media_bucket/1.jpeg?t=2024-09-24T17%3A19%3A03.583Z\"></div>\n\t\t\t\t\t<div id=\"img_02\"><img class=\"image\" src=\"https://ifthncqcxbdnyjcrwhlq.supabase.co/storage/v1/object/public/media_bucket/2.webp?t=2024-09-24T17%3A19%3A51.633Z\"></div>\n       \n    </div>\n\t\t\t<script type=\"text/javascript\" src=\"//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js\"></script>\n</body>",
+    "js": "\n\nappsmith.onReady(()=>{\n\t$(\".container\").slick({\n\t\tdots: true,\n\t\tarrows: false,\n\t\tinfinite: true,\n\t\tautoplay: false,\n\t\tautoplaySpeed: 2000,\n\t\tappendDots: $(\"appsmith.model.text\"),\n\t\t// appendArrows: $(\".centered-div\"),\n\t\tfocusOnSelect: false,\n\t\tspeed: 100,\n\t\tswipe: true,\n\t\ttouchMove: true\n\t});\n\n\n\t$('#slick').on('swipe', function(event, slick, direction){\n\t\t//console.log(direction);\n\t});\n\n\t$('#slick').on('edge', function(event, slick, direction){\n\t\t//console.log('edge was hit')\n\t});\n\n\t$('#slick').on('beforeChange', function(event, slick, currentSlide, nextSlide){\n\t\t//console.log(nextSlide);\n\t});\n\n\t$('#slick').on('afterChange', function(event, slick, currentSlide) {\nappsmith.updateModel({currentSlide: currentSlide})\n\t\tconsole.log(currentSlide);\n\t});\n\n\tappsmith.onUiChange(()=>{\n\n\t\t//$(\"#slick\").slick('setPosition')\n\t})\n})"
+  },
+  "version": 1,
+  "widgetId": "yqiuq5k29y",
+  "widgetName": "Custom1Copy"
+}

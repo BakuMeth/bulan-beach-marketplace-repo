@@ -1,0 +1,59 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 42,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{unit_util_func.isUnitImageProcessing ? true : false}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "fhnfctbu8k",
+  "leftColumn": 0,
+  "minWidth": 120,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 41,
+  "mobileRightColumn": 57,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "onClick": "{{unit_util_func.deleteUnitImage()}}",
+  "parentColumnSpace": 10.848843574523926,
+  "parentId": "7308pfh1u8",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "text": "DELETE",
+  "topRow": 38,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "fmda4us7o4",
+  "widgetName": "delete_unit_image_button"
+}

@@ -1,0 +1,67 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#ffffff",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 71,
+  "boxShadow": "none",
+  "defaultModel": "{{\n{\nimageURLs: beach_func.getFeaturedPhotosURLs.data\n}\n}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultModel"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "owx931zasf",
+  "leftColumn": 5,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 48,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 23,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "originalBottomRow": 71,
+  "originalTopRow": 15,
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 59,
+  "shouldScrollContents": true,
+  "srcDoc": {
+    "css": "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: Arial, sans-serif;\n  background-color: white;\n}\n\n/* Gallery container */\n.gallery {\n  display: grid;\n  grid-template-columns: 2fr 1fr 1fr;\n  grid-gap: 5px;\n  width: 100%;\n  max-width: 1120px; /* Max width of 1120px */\n  margin: 0 auto; /* Center container without adding extra spacing */\n  padding: 0;\n  height: 550px;\n}\n\n/* Ensure images fill the grid and maintain aspect ratio */\n.gallery img {\n  width: 100%;\n  height: 100%;\n  object-fit: cover; /* Ensure image fills the grid area */\n  cursor: pointer;\n  display: block;\n  background-color: rgba(0, 0, 0, 0);\n  transition: background-color 0.3s ease;\n}\n\n.gallery img:hover {\n  filter: brightness(0.9); /* Darken the image to create a black tint */\n}\n\n/* Large image spans two rows */\n.gallery-item-large {\n  grid-column: 1/2;\n  grid-row: 1/span 2;\n  border-radius: 12px 0 0 12px; /* Corrected syntax */\n  position: relative;\n  overflow: hidden;\n}\n\n/* Smaller images */\n.gallery-item {\n  grid-column: span 1;\n  position: relative;\n  overflow: hidden;\n}\n\n/* Skeleton loader */\n.skeleton {\n  background-color: #f0f0f0;\n  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);\n  background-size: 200% 100%;\n  animation: shimmer 3s infinite linear; /* Increase the duration from 1.5s to 3s for a slower effect */\n}\n\n/* Shimmer effect for skeleton loader */\n@keyframes shimmer {\n  0% {\n    background-position: -1000px 0;\n  }\n  100% {\n    background-position: 1000px 0;\n  }\n}\n/* Show all photos inside the last image */\n.gallery-item:last-child .show-more {\n  position: absolute;\n  bottom: 10px;\n  right: 10px;\n  background-color: rgba(0, 0, 0, 0.6);\n  padding: 10px 15px;\n  border-radius: 5px;\n}\n\n/* Additional styling for large and small images */\n.large-image {\n  border-radius: 10px 0 0 10px;\n}\n\n.small-image-top {\n  border-radius: 0 18px 0 0;\n}\n\n.small-image-bottom {\n  border-radius: 0 0 18px 0;\n}\n\n/* Show-more button styling */\n.show-more button {\n  background-color: #008cba;\n  color: white;\n  border: none;\n  padding: 10px 15px;\n  border-radius: 5px;\n  cursor: pointer;\n  font-size: 14px;\n}\n\n.show-more button:hover {\n  background-color: #005f73;\n}\n\n/* Responsive design for smaller screens */\n@media screen and (max-width: 900px) {\n  .gallery {\n    grid-template-columns: 1fr 1fr;\n    grid-template-rows: auto;\n  }\n  .gallery-item-large {\n    grid-column: 1/span 2;\n    grid-row: auto;\n  }\n}",
+    "html": "<div class=\"gallery\">\n  <div class=\"gallery-item-large\"></div>\n  <div class=\"gallery-item\"></div>\n  <div class=\"gallery-item\"></div>\n  <div class=\"gallery-item\"></div>\n  <div class=\"gallery-item\">\n    <div class=\"show-more\">\n      <button>Show all photos</button>\n    </div>\n  </div>\n</div>\n",
+    "js": "appsmith.onReady(() => {\n  function checkImageURLs() {\n    const imageURLs = appsmith.model.imageURLs;\n    if (imageURLs && imageURLs.length > 0) {\n      const galleryItems = document.querySelectorAll('.gallery-item, .gallery-item-large');\n      console.log('Gallery items found:', galleryItems.length);\n      galleryItems.forEach((item, index) => {\n        // Check if there is an image URL for the current index\n        if (imageURLs[index]) {\n          const img = document.createElement('img');\n          img.src = imageURLs[index];\n          img.alt = `Image ${index + 1}`;\n\n          // Add skeleton loader to the parent container\n          item.classList.add('skeleton');\n\n          // Remove the skeleton loader once the image is fully loaded\n          img.onload = () => {\n            item.classList.remove('skeleton');\n            console.log(`Image ${index + 1} fully loaded`);\n          };\n\n          // Handle image load error\n          img.onerror = () => {\n            console.error(`Failed to load Image ${index + 1}`);\n            item.classList.remove('skeleton');\n            // Optionally add a placeholder image or keep the skeleton\n            img.src = 'path-to-fallback-image.jpg'; // Fallback image\n          };\n\n          // Apply specific classes to certain images\n          if (index === 0) {\n            img.classList.add('large-image');\n          } else if (index === 2) {\n            img.classList.add('small-image-top');\n          } else if (index === 4) {\n            img.classList.add('small-image-bottom');\n          }\n\n          // Append the image to the gallery item container\n          item.appendChild(img);\n        } else {\n          console.warn(`No URL found for gallery item ${index + 1}`);\n          // Skeleton loader stays visible for missing image URLs\n          item.classList.add('skeleton');\n        }\n      });\n\n      // Stop checking once the images have been set\n      clearInterval(imageCheckInterval);\n    } else {\n      console.log('Waiting for imageURLs to be populated...');\n    }\n  }\n\n  // Set an interval to periodically check if imageURLs are populated\n  const imageCheckInterval = setInterval(checkImageURLs, 2000); // Check every 2 seconds\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 15,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: Arial, sans-serif;\n  background-color: #ffff;\n}\n\n/* Gallery container */\n.gallery {\n  display: grid;\n  grid-template-columns: 2fr 1fr 1fr;\n  grid-gap: 5px;\n  width: 100%;\n  max-width: 1120px; /* Max width of 1120px */\n  margin: 0 auto; /* Center container without adding extra spacing */\n  padding: 0;\n  height: 550px;\n}\n\n/* Ensure images fill the grid and maintain aspect ratio */\n.gallery img {\n  width: 100%;\n  height: 100%;\n  object-fit: cover; /* Ensure image fills the grid area */\n  cursor: pointer;\n  display: block;\n  background-color: rgba(0, 0, 0, 0);\n  transition: background-color 0.3s ease;\n}\n\n.gallery img:hover {\n  filter: brightness(0.9); /* Darken the image to create a black tint */\n}\n\n/* Large image spans two rows */\n.gallery-item-large {\n  grid-column: 1 / 2;\n  grid-row: 1 / span 2;\n  border-radius: 12px 0 0 12px; /* Corrected syntax */\n  position: relative;\n  overflow: hidden;\n}\n\n/* Smaller images */\n.gallery-item {\n  grid-column: span 1;\n  position: relative;\n  overflow: hidden;\n}\n\n/* Skeleton loader */\n.skeleton {\n  background-color: #f0f0f0;\n  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);\n  background-size: 200% 100%;\n  animation: shimmer 3s infinite linear; /* Increase the duration from 1.5s to 3s for a slower effect */\n}\n\n/* Shimmer effect for skeleton loader */\n@keyframes shimmer {\n  0% {\n    background-position: -1000px 0;\n  }\n  100% {\n    background-position: 1000px 0;\n  }\n}\n\n/* Show all photos inside the last image */\n.gallery-item:last-child .show-more {\n  position: absolute;\n  bottom: 10px;\n  right: 10px;\n  background-color: rgba(0, 0, 0, 0.6);\n  padding: 10px 15px;\n  border-radius: 5px;\n}\n\n/* Additional styling for large and small images */\n.large-image {\n  border-radius: 10px 0 0 10px;\n}\n\n.small-image-top {\n  border-radius: 0 18px 0 0;\n}\n\n.small-image-bottom {\n  border-radius: 0 0 18px 0;\n}\n\n/* Show-more button styling */\n.show-more button {\n  background-color: #008cba;\n  color: white;\n  border: none;\n  padding: 10px 15px;\n  border-radius: 5px;\n  cursor: pointer;\n  font-size: 14px;\n}\n\n.show-more button:hover {\n  background-color: #005f73;\n}\n\n/* Responsive design for smaller screens */\n@media screen and (max-width: 900px) {\n  .gallery {\n    grid-template-columns: 1fr 1fr;\n    grid-template-rows: auto;\n  }\n  .gallery-item-large {\n    grid-column: 1 / span 2;\n    grid-row: auto;\n  }\n}\n",
+    "html": "<div class=\"gallery\">\n  <div class=\"gallery-item-large\"></div>\n  <div class=\"gallery-item\"></div>\n  <div class=\"gallery-item\"></div>\n  <div class=\"gallery-item\"></div>\n  <div class=\"gallery-item\">\n    <div class=\"show-more\">\n      <button>Show all photos</button>\n    </div>\n  </div>\n</div>\n",
+    "js": "appsmith.onReady(() => {\n  function checkImageURLs() {\n    const imageURLs = appsmith.model.imageURLs;\n\n    if (imageURLs && imageURLs.length > 0) {\n      const galleryItems = document.querySelectorAll('.gallery-item, .gallery-item-large');\n      console.log('Gallery items found:', galleryItems.length);\n\n      galleryItems.forEach((item, index) => {\n        // Check if there is an image URL for the current index\n        if (imageURLs[index]) {\n          const img = document.createElement('img');\n          img.src = imageURLs[index];\n          img.alt = `Image ${index + 1}`;\n\n          // Add skeleton loader to the parent container\n          item.classList.add('skeleton');\n\n          // Remove the skeleton loader once the image is fully loaded\n          img.onload = () => {\n            item.classList.remove('skeleton');\n            console.log(`Image ${index + 1} fully loaded`);\n          };\n\n          // Handle image load error\n          img.onerror = () => {\n            console.error(`Failed to load Image ${index + 1}`);\n            item.classList.remove('skeleton');\n            // Optionally add a placeholder image or keep the skeleton\n            img.src = 'path-to-fallback-image.jpg'; // Fallback image\n          };\n\n          // Apply specific classes to certain images\n          if (index === 0) {\n            img.classList.add('large-image');\n          } else if (index === 2) {\n            img.classList.add('small-image-top');\n          } else if (index === 4) {\n            img.classList.add('small-image-bottom');\n          }\n\n          // Append the image to the gallery item container\n          item.appendChild(img);\n        } else {\n          console.warn(`No URL found for gallery item ${index + 1}`);\n          // Skeleton loader stays visible for missing image URLs\n          item.classList.add('skeleton');\n        }\n      });\n\n      // Stop checking once the images have been set\n      clearInterval(imageCheckInterval);\n    } else {\n      console.log('Waiting for imageURLs to be populated...');\n    }\n  }\n\n  // Set an interval to periodically check if imageURLs are populated\n  const imageCheckInterval = setInterval(checkImageURLs, 2000); // Check every 2 seconds\n});\n"
+  },
+  "version": 1,
+  "widgetId": "0yzlhccj09",
+  "widgetName": "featured_images"
+}

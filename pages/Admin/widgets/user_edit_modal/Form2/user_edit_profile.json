@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 27,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( users_table.triggeredRow.profile))(user_edit_profile.options, user_edit_profile.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "0fv7m6t37d",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Change User Type\n",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 39,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 32,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 27,
+  "originalTopRow": 20,
+  "parentColumnSpace": 6.0146484375,
+  "parentId": "0h7yuh358q",
+  "parentRowSpace": 10,
+  "placeholderText": "",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"CUSTOMER\",\n    \"code\": \"customer\"\n  },\n  {\n    \"name\": \"BEACH OWNER\",\n    \"code\": \"beach owner\"\n  }\n]",
+  "topRow": 20,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "z3279wwdvf",
+  "widgetName": "user_edit_profile"
+}

@@ -1,0 +1,67 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 18,
+  "boxShadow": "none",
+  "defaultOptionValue": "_2024",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "p1dy31o1if",
+  "labelAlignment": "left",
+  "labelPosition": "Auto",
+  "labelText": "Year",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 4,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 12,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 5,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{util_func.setYear(year_dropdown.selectedOptionValue)}}",
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 15.7822265625,
+  "parentId": "6ebse7muod",
+  "parentRowSpace": 10,
+  "placeholderText": "",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 13,
+  "serverSideFiltering": true,
+  "sourceData": "[\n  {\n    \"name\": \"2024\",\n    \"code\": \"_2024\"\n  },\n  {\n    \"name\": \"2023\",\n    \"code\":\"_2023\"\n\t}\n]",
+  "topRow": 11,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "prn8d2nzem",
+  "widgetName": "year_dropdown"
+}

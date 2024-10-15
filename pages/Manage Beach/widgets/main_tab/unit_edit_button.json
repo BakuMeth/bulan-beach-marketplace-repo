@@ -1,0 +1,68 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 52,
+  "bottomRowBeforeCollapse": 52,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "SECONDARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{unit_table.selectedRowIndex === -1 ? true : false}}",
+  "isLoading": false,
+  "isVisible": "{{beach_util_func.isShowUnits ? true : false}}",
+  "key": "fhnfctbu8k",
+  "leftColumn": 46,
+  "minWidth": 120,
+  "mobileBottomRow": 71,
+  "mobileLeftColumn": 16,
+  "mobileRightColumn": 32,
+  "mobileTopRow": 67,
+  "needsErrorInfo": false,
+  "onClick": "{{showModal('unit_edit_modal')}}",
+  "originalBottomRow": 52,
+  "originalTopRow": 47,
+  "parentColumnSpace": 19.8125,
+  "parentId": "y3teb7haba",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 53,
+  "text": "Edit",
+  "topRow": 47,
+  "topRowBeforeCollapse": 47,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "d2aqdndb3y",
+  "widgetName": "unit_edit_button"
+}

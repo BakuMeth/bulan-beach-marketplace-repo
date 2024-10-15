@@ -1,0 +1,56 @@
+{
+  "gitSyncId": "66f3bb1136a3695bb56ff03e_3fb4e7ae-c33c-446d-8355-78d4b7f0931f",
+  "id": "Manage Beach_beach_util_func",
+  "unpublishedCollection": {
+    "name": "beach_util_func",
+    "pageId": "Manage Beach",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "isProfileComplete",
+        "value": "false"
+      },
+      {
+        "name": "isBeachProfileCreated",
+        "value": "false"
+      },
+      {
+        "name": "isFeaturedPhotosUploaded",
+        "value": "false"
+      },
+      {
+        "name": "isProcessing",
+        "value": "false"
+      },
+      {
+        "name": "defaultBeachtAb",
+        "value": "'EMPTY'"
+      },
+      {
+        "name": "mainBeachData",
+        "value": "{}"
+      },
+      {
+        "name": "mainUnitData",
+        "value": "[]"
+      },
+      {
+        "name": "isShowUnits",
+        "value": "false"
+      },
+      {
+        "name": "beachTableSelectedRow",
+        "value": "'-1'"
+      },
+      {
+        "name": "status",
+        "value": "[{\n  \"name\": \"Operational\",\n  \"code\": true\n}, {\n  \"name\": \"Maintenance\",\n  \"code\": false\n}]"
+      },
+      {
+        "name": "featuredImages",
+        "value": "[]"
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+	"beach_id": "{{this.params.beachID}}",
+	"name": "{{this.params.name}}",
+	"details": "{{this.params.details}}",
+	"rate": "{{this.params.rate}}"
+}

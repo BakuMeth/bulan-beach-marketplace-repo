@@ -1,0 +1,58 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 47,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultText": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "inputType": "markdown",
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{beach_util_func.isBeachProfileCreated === true || beach_util_func.isProcessing === true ? true : false}}",
+  "isLoading": false,
+  "isRequired": true,
+  "isToolbarHidden": false,
+  "isVisible": true,
+  "key": "a7lqmayo9a",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Beach Description",
+  "labelWidth": 5,
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 29,
+  "mobileLeftColumn": 20,
+  "mobileRightColumn": 44,
+  "mobileTopRow": 9,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 17.9521484375,
+  "parentId": "45myakhgrx",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 41,
+  "topRow": 8,
+  "type": "RICH_TEXT_EDITOR_WIDGET",
+  "version": 1,
+  "widgetId": "sh68o1gxjr",
+  "widgetName": "beach_description"
+}

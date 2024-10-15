@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "66f3bb1136a3695bb56ff03e_7c3ef6e4-bace-4e13-ae57-4eb19556ee22",
+  "id": "Manage Beach_delete_func",
+  "unpublishedCollection": {
+    "name": "delete_func",
+    "pageId": "Manage Beach",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "client",
+        "value": "supabase.createClient('https://ifthncqcxbdnyjcrwhlq.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlmdGhuY3FjeGJkbnlqY3J3aGxxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjYzOTU5MzIsImV4cCI6MjA0MTk3MTkzMn0.30s0M78xOKiU-cgHh-n57ItkIF-YQ9fb0w7jrSWsL4U', {\n  headers: {\n    Authorization: `Bearer ${appsmith.store.access_token}`\n  }\n})"
+      }
+    ]
+  }
+}

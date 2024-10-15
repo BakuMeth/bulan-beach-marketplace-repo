@@ -1,0 +1,4 @@
+{
+	"first_name": "{{update_user_fname.text}}",
+	"last_name": "{{update_user_lname.text}}"
+}

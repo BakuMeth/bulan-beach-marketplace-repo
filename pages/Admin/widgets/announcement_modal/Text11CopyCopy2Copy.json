@@ -1,0 +1,57 @@
+{
+  "animateLoading": true,
+  "borderColor": "#858282",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "0",
+  "bottomRow": 15,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "kpj65gqaft",
+  "leftColumn": 8,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 16,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 18,
+  "mobileTopRow": 12,
+  "needsErrorInfo": false,
+  "originalBottomRow": 23,
+  "originalTopRow": 19,
+  "overflow": "NONE",
+  "parentColumnSpace": 14.84375,
+  "parentId": "p4wxwpkow0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 29,
+  "shouldTruncate": false,
+  "text": "{{announcement_list.triggeredItem.beach_id}}",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 11,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "0y7av4r5hy",
+  "widgetName": "Text11CopyCopy2Copy"
+}

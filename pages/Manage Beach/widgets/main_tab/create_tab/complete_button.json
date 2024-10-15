@@ -1,0 +1,64 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 52,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "right",
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{unit_util_func.isUnitCreated === true ? false : true}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "nafrfk2hph",
+  "leftColumn": 56,
+  "minWidth": 120,
+  "mobileBottomRow": 28,
+  "mobileLeftColumn": 40,
+  "mobileRightColumn": 56,
+  "mobileTopRow": 24,
+  "needsErrorInfo": false,
+  "onClick": "{{ unit_util_func.resetUnitCreateForm();\nutil_func.setDefaultMainTab('BeachTab');\nutil_func.checkOwnedBeach()\n}}",
+  "originalBottomRow": 52,
+  "originalTopRow": 48,
+  "parentColumnSpace": 19.5,
+  "parentId": "8801z6q9xz",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "text": "FINISH",
+  "topRow": 48,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "yzx83n5r08",
+  "widgetName": "complete_button"
+}

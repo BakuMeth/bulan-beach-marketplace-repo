@@ -1,0 +1,3 @@
+{
+	"email": "{{update_user_email.text}}",
+}

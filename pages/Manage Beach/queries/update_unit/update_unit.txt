@@ -1,0 +1,5 @@
+{
+	"name" : "{{this.params.name}}",
+	"rate" : "{{this.params.rate}}",
+	"details" : "{{this.params.details}}"
+}
